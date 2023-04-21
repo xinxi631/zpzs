@@ -1,6 +1,6 @@
 // 声明高德api的key和公用地址
 var url1='https://restapi.amap.com/v3/'
-var key='?key=e2ff1f72502b011e122d20733a48ac45'
+var key='?key=7b0b55dc3bf2778fa1f74930f898f6e3'
 // 地址选择
 // 加载swpier实现地址选项卡的切换
 var ns_banner = new Swiper('.pf-tq-div', {
