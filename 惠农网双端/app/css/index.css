@@ -1,0 +1,480 @@
+.ns-nav a{
+    height: auto;
+}
+.ns-nav a img{
+    display: block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.ns-nav a span{
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+.top-adv a{
+    height: calc((94vw - 5px)/2/3);
+}
+.top-adv a img{
+    height: 100%;
+}
+.top1{
+    border-bottom: 1px solid #585858;
+}
+.top1 div{
+    display: flex;
+}
+.top1 div a{
+    margin: 0 5px;
+    color: #585858;
+}
+.top1 div span{
+    color: #58b581;
+}
+.top1 p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #399c39;
+    text-indent: 20px;
+    position: relative;
+}
+.top1 p::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: calc((100% - 15px)/2);
+}
+.sell p::after{
+    background: url(../img/sell.png)no-repeat;
+    background-size: 100% 100%;
+}
+.art-banner a{
+    height: auto;
+}
+.art-banner a img{
+    border-radius: 10px;
+    height: calc(94vw/100*59/1.2);
+}
+.art-banner a span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+.art-banner-span{
+    bottom: 40px!important;
+}
+.art-banner-span span{
+    width: 10px;
+    height: 10px;
+}
+.art-img a img{
+    height: calc(((94vw/100*59/1.2) - 30px)/2);
+}
+.art-img a span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.art-div1{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #585858;
+    box-sizing: border-box;
+}
+.art-ul a{
+    position: relative;
+}
+.art-ul a::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #585858;
+    left: 0;
+    top: calc((100% - 5px)/2);
+}
+.art-ul a span{
+    color: #399c39;
+}
+.hit-ul a{
+    display: block;
+    margin-top: 5px;
+}
+.hit-ul a div{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.hit-ul a div i{
+    font-style: normal;
+    font-size: 14px;
+    width: 3em;
+    color: #019f55;
+}
+.hit-ul a div p{
+    width: calc(100% - 3em);
+    font-size: 15px;
+    color: #343434;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.hit-ul a span{
+    height: 50px;
+    line-height: 25px;
+    overflow: hidden;
+    color: #585858;
+    display: block;
+}
+.js-ul{
+    counter-reset: section;
+    margin-bottom: 10px;
+}
+.js-ul a{
+    position: relative;
+}
+.js-ul a p{
+    text-indent: 20px;
+}
+.js-ul a::after{
+    counter-increment: section;
+    content: counter(section);
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: calc((100% - 15px)/2);
+    background: #c0c0c0;
+    position: absolute;
+    color: #fff;
+    line-height: 15px;
+    text-align: center;
+}
+.js-ul a:nth-child(-n+3)::after{
+    background: #d60000;
+}
+.js-ul a span{
+    color: #019f55;
+}
+.art-ul2 a{
+    display: block;
+    padding: 5px 0;
+    border-top: 1px solid #ababab;
+    box-sizing: border-box;
+}
+.art-ul2 a p{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #343434;
+    font-size: 15px;
+}
+.art-ul2 a span{
+    height: 50px;
+    line-height: 25px;
+    color: #585858;
+    display: block;
+    overflow: hidden;
+}
+.art-adv a{
+    display: block;
+    height: calc((94vw - 5px)/2/3);
+}
+.art-adv a img{
+    height: 100%;
+}
+.buy p::after{
+    background: url(../img/buy.png)no-repeat;
+    background-size: 100% 100%;
+}
+.top2{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #019f55;
+}
+.sell-ul a div{
+    display: flex;
+    width: 70%;
+}
+.sell-ul a div i{
+    font-style: normal;
+    color: #019f55;
+    width: auto;
+    max-width: 35%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.sell-ul a div p{
+    width: 65%;
+    max-width: 65%;
+    text-indent: 2px;
+}
+.sell-ul a span{
+    color: #019f55;
+}
+.sell-img a{
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sell-img a div{
+    width: 69%;
+}
+.sell-img a img{
+    width: 29%;
+    height: 75px;
+}
+.sell-img a span{
+    display: block;
+    max-height: 50px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.sell-img a p{
+    height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    color: #019f55;
+}
+.sell-img2 a{
+    margin: 0;
+    padding: 5px 0;
+    border-top: 1px dashed #c0c0c0;
+    box-sizing: border-boxs;
+}
+.com p::after{
+    background: url(../img/com.png)no-repeat;
+    background-size: 100% 100%;
+}
+.com-img a{
+    height: calc((94vw - 15px)/4);
+    box-shadow: 0px 0px 5px 5px #e7e7e7;
+}
+.com-img a img{
+    height: 100%;
+}
+.com-img2 a img{
+    box-shadow: 0px 0px 5px 5px #e7e7e7;
+}
+.com-ul a p{
+    max-width: 100%;
+}
+.com-ul2 a p{
+    max-width: 100%;
+}
+.buy2 p::after{
+    background: url(../img/art.png)no-repeat;
+    background-size: 100% 100%;
+}
+.buy-img a{
+    display: flex;
+    justify-content: space-between;
+}
+.buy-img a img{
+    width: 49%;
+    height: 100px;
+}
+.buy-img a div{
+    width: 49%;
+}
+.buy-img a div span{
+    display: block;
+    height: 50px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.buy-img a div p{
+    color: #019f55;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 25px;
+    line-height: 25px;
+}
+.buy-div{
+    border: 1px solid #ababab;
+}
+.buy-top{
+    padding: 0 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ababab;
+}
+.buy-top p{
+    width: 50%;
+}
+.buy-top span{
+    width: 25%;
+    text-align: center;
+    display: block;
+}
+.buy-ul a{
+    display: flex;
+    padding: 5px;
+}
+.buy-ul a div{
+    display: flex;
+    width: 50%;
+}
+.buy-ul a div i{
+    font-style: normal;
+    color: #019f55;
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.buy-ul a div p{
+    max-width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.buy-ul a span{
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+}
+.exh p::after{
+    background: url(../img/exh.png)no-repeat;
+    background-size: 100% 100%;
+}
+.exh-ul a{
+    padding-left: 20px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.exh-ul a::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url(../img/yd.png)no-repeat;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+}
+.exh-ul a::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #019f55;
+    left: 4px;
+    top: 0;
+}
+.exh-ul a p{
+    width: 100%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #343434;
+    font-size: 15px;
+}
+.exh-ul a span{
+    height: 50px;
+    line-height: 25px;
+    overflow: hidden;
+    color: #585858;
+    overflow: hidden;
+    display: block;
+}
+.exh-img{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.exh-img img{
+    width: 34%;
+    border: 1px solid #019f55;
+    height: 100px;
+    box-sizing: border-box;
+}
+.exh-img div{
+    width: 64%;
+}
+.exh-img div p{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 15px;
+    color: #000000;
+}
+.exh-img div span{
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    color: #585858;
+}
+.exh-img div i{
+    font-style: normal;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    color: #019f55;
+}
+.top3{
+    height: 30px;
+    border-bottom: 2px solid #ababab;
+    box-sizing: border-box;
+}
+.top3 span{
+    font-size: 15px;
+    font-weight: bold;
+    color: #019f55;
+}
+.ncfl p::after{
+    background: url(../img/flyz.png)no-repeat;
+    background-size: 100% 100%;
+}
+.ncfl-img a img{
+    height: calc(94vw/100*32/1.2);
+}
+.ncfl-img a span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+.ncpjk p::after{
+    background: url(../img/ncsjk.jpg)no-repeat;
+    background-size: 100% 100%;
+}
+.nygc p::after{
+    background: url(../img/nygc.png)no-repeat;
+    background-size: 100% 100%;
+}
+.njpx p::after{
+    background: url(../img/fj.png)no-repeat;
+    background-size: 100% 100%;
+}
+.ncpjk-ul{
+    margin-top: 0;
+}
+.ncpjk-ul a:nth-child(1){
+    margin-top: 0;
+    border-top: 0;
+}
+.ncpjk-ul a{
+    border-top-style: dashed;
+}

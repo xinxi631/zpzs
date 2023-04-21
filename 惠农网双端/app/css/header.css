@@ -1,0 +1,259 @@
+/* 
+一些通用的基本不变的样式
+*/
+/* .maximum{
+    padding-bottom: 40px;
+} */
+body{
+    background: #fff;
+}
+nav{
+    background: rgba(255, 255, 255, 1);
+}
+nav .nav_links{
+    padding-top: 0;
+    top: 80px;
+    left: 10px;
+    width: 100vw;
+    background-color: #fff;
+}
+nav .nav_links a{
+    height: 40px;
+    line-height: 40px;
+}
+.nav{
+    background: #03a33e;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 100% 100%;
+}
+.open img{
+    width: 30px;
+    height: 25px;
+    margin: 0 0 0 20px;
+}
+.logo img{
+    width: 125px;
+    height: 30px;
+}
+.open{
+    width: 16%;
+    height: 25px;
+}
+.open span{
+    text-align: center;
+    display: block;
+    height: 100%;
+    line-height: 30px;
+    color: #d77117;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav .top-nav{
+    background: #03a33e;
+    width: 100%;
+    display: flex;
+    background-size: 100% auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .top-nav .logo{
+    display: flex;
+    width: 240px;
+    margin: 0;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.nav .top-nav .logo span{
+    /* font-family: '02'; */
+    background-image:-webkit-linear-gradient(left,#fff,#fff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent; 
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+}
+.nav .top-nav .logo p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #fff;
+}
+.nav .login{
+    height: 70px;
+    line-height: 70px;
+    color: #fff;
+}
+.nav .login a{
+    color: #fff;
+}
+.shurff{
+    position: relative;
+    margin: 80px auto 0;
+    width: 95%;
+    overflow: hidden;
+}
+.top-banner{
+    height: calc(95vw/1.6);
+}
+.top-banner a{
+    display: block;
+    height: calc(95vw/1.6);
+    width: 100%;
+}
+.top-banner a img{
+    height: 100%;
+}
+.top-banner-span{
+    position: unset!important;
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.top-banner-span span{
+    margin: 5px!important;
+    border-radius: 0!important;
+    width: 8px!important;
+    height: 8px!important;
+    background-color: #f48c21!important;
+    transform: rotate(45deg);
+}
+.top-banner-span span.swiper-pagination-bullet-active{
+    width: 10px!important;
+    height: 10px!important;
+    background-color: #0a9234!important;
+}
+.Region{
+    position: relative;
+}
+/* 搜索框 */
+.top_input div{
+    width: 20%;
+    height: 28px;
+    line-height: 28px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #ccecdd;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border-radius: 10px; */
+}
+.top_input div span{
+     display: block;
+     width: 100%;
+     color: #019f55;
+     height: 28px;
+     line-height: 28px;
+     text-align: center;
+     font-size: 14px;
+}
+.top_input .option-ul{
+    top: 40px;
+    background: rgba(1,159,85,0.6)!important;
+    height: auto;
+    width: 20%;
+    position: absolute;
+    z-index: 8;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+.top_input .option-ul span{
+     display: block;
+     width: 100%;
+     color: #fff;
+}
+.top_input{
+    position: relative;
+    width: 70%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #019f55;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.top_input img{
+    width: 20px;
+    height: 20px;
+}
+.top_input input[type=text]{
+    padding: 0!important;
+    height: 28px!important;
+    line-height: 28px!important;
+    border-style: none;
+    width: 60%;
+    border-right: none;
+    color: #019f55;
+    background: #ccecdd;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.top_input input[type=text]::placeholder{
+    color: #019f55;
+}
+.top_input button{
+    box-sizing: border-box;
+    padding: 0!important;
+    width: 20%;
+    height: 28px;
+    background: none;
+    border-left: none;
+    color: #fff;
+    background: none;
+    border-radius: 5px;
+}
+.top_input button img{
+    width: 20px;
+    height: 20px;
+}
+.top-from{
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: #019f55;
+    justify-content: center;
+}
+.top-from a{
+    margin: 0 5px;
+    color: #019f55;
+}
+/* end */
+.ns-nav a{
+    display: flex;
+    margin-top: 10px;
+    width: 22vw;
+    height: 19vw;
+    background: url(../img/nav-a.png)no-repeat;
+    background-size: 100% 100%;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.ns-nav a span{
+    width: 4em;
+    margin: 0 auto;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+}
+.ns-nav a img{
+    width: 30%;
+    height: auto;
+    padding: 0 calc(70%/2);
+}
+
+.bg-color{
+    background-color: #f2ede9;
+}
+.bah p{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

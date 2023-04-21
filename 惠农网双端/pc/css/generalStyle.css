@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+}
+html{
+	font-size:14px;
+    color: #4c4c4c;
+}
+body{
+    font-family: 微软雅黑,楷书,宋体;
+    border:0;
+    background: #FFF;
+}
+a{
+    text-decoration:none;
+    color: #4c4c4c;
+}
+ul li{
+    list-style: none;
+}
+img {
+    border:none;
+    padding:0px;
+    margin:0px;
+}
+iframe{
+    border: none !important;
+}
+table{
+    border-collapse:collapse !important;
+}
+.cb{
+  clear: both;
+}
+textarea{
+	outline: none;
+	resize:none;
+	overflow-y: auto;
+}
+.eliminate{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.sc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.bk{
+    word-break:break-all;
+}
+.db{
+    display: block;
+    overflow: hidden;
+}
+.dl{
+    display: inline-block;
+}
+.a_po{
+    position: absolute;
+    top:4px;
+    right: 1%;
+    font-size: 12px;
+    font-weight: 100;
+    color: #87868b;
+}
+.bor{
+    box-sizing:border-box;
+}

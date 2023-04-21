@@ -1,0 +1,554 @@
+a,
+span,
+li,
+p,
+b,
+i {
+
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.w40{
+    width: 39%;
+}
+.w60{
+    width: 59%;
+}
+.nav .login{
+	color: #13853c;
+	display: flex;
+	width: 22%;
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	justify-content: center;
+}
+.nav .login a{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	color: #13853c;
+}
+.top_input{
+    display: flex!important;
+    justify-content: space-between;
+}
+.top_input{
+    width: 60%;
+    box-sizing: border-box;
+}
+input[type=text]{
+    border: none;
+    outline: none;
+}
+input[type=button]{
+    border: none;
+    outline: none;
+}
+input[type=submit]{
+    border: none;
+    outline: none;
+}
+.top_input input[type=text]{
+    width: 70%;
+    text-indent: 1em;
+}
+.top_input button{
+    border: none;
+    outline: none;
+    width: 15%;
+    height: 100%;
+}
+.top_input button img{
+    width: 70%;
+    height: 80%;
+    margin: auto;
+}
+.top_input input[type=submit]{
+    width: 30%;
+    height: 100%;
+}
+.qfd:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.industry {
+    display: block;
+    width: 94%;
+    margin: 10px auto 0;
+}
+
+.Region {
+    width: 100%;
+    /* overflow: hidden; */
+}
+.ns-nav{
+    display: flex!important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ns-nav a{
+    width: 18%;
+    margin-top: 10px;
+}
+.ns-nav a img{
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+}
+.ns-nav a span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.nav{
+    width: 100%;
+    /* overflow: hidden; */
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999;
+    background: #ffffff;
+}
+.open{
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+.open img{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    color: #0d73c7;
+    width: 220px;
+    margin: 18px auto;
+    height: 35px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+nav {
+    overflow: hidden;
+    position: fixed;
+    z-index: 99;
+    background: #ffffff;
+    background-size: 100% 100%;
+    transform: translateX(0px);
+    box-shadow: 1px 2px 3px #eaeaea;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
+
+}
+.show{
+    display: block!important;
+}
+nav.nav_open {
+    transform: translateX(-1100px);
+    border-radius: 0% 0% 0% 0%;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+nav .nav_links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 900ms cubic-bezier(0.9, 0, 0.33, 1);
+    padding-top: 70px;
+}
+
+nav .nav_links.fade_in {
+    opacity: 1;
+    transform: translateX(-10px);
+}
+
+nav .nav_links .link {
+    padding: 0.5rem 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+}
+
+.shurff {
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 205px;
+}
+
+.swiper-pagination span {
+    width: 5px;
+    height: 5px;
+}
+
+.swiper-pagination-bullet {
+    background: #FFFFFF !important;
+    opacity: 0.6 !important;
+    margin: 0px 4px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+.nst-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nst-nav a{
+    display: block;
+}
+.nst-nav a span{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.ns-buj{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.w50{
+    width: 49%;
+}
+.w30{
+    width: 29%;
+}
+.w70{
+    width: 69%;
+}
+.adv-1{
+    display: block;
+    height: 60px;
+}
+.adv-1-2 a{
+    margin-top: 10px;
+    display: block;
+    height: 60px;
+}
+.adv-2{
+    display: flex;
+    justify-content: space-between;
+}
+.adv-2 a{
+    display: block;
+    width: calc((100% - 5px)/2);
+    height: 60px;
+}
+.adv-3{
+    display: flex;
+    justify-content: space-between;
+}
+.adv-3 a{
+    display: block;
+    width: 32%;
+    height: 60px;
+}
+.adv-2-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.adv-2-2 a{
+    width: calc((100% - 5px)/2);
+    display: block;
+    margin-bottom: 5px;
+}
+.adv-2-2 a img{
+    height: 60px;
+}
+.adv-4-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.adv-4-2 a{
+    width: calc((100% - 15px)/4);
+    display: block;
+    margin-bottom: 5px;
+}
+.adv-4-2 a img{
+    height: 100%;
+}
+.public-ul-img{
+    display: flex;
+    justify-content: space-between;
+}
+.public-ul-img a{
+    display: block;
+}
+.public-ul-img a span{
+    height: 40px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+}
+.public-ul-time a{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+.public-ul-time a p{
+    text-indent: 1em;
+    width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-ul-time a span{
+    width: 25%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: right;
+}
+.public-ul-r-3 a{
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.public-ul-r-3 div{
+    width: 80%;
+}
+.public-ul-r-3 div p{
+    text-indent: 1em;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-ul-r-3 div span{
+    display: block;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 20%;
+}
+.public-ul-r-3 div i{
+    font-style: normal;
+    width: 20%;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-ul-2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.public-ul-2 a{
+    height: 30px;
+    line-height: 30px;
+    width: 49%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-top-sj{
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.public-top-sj:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.public-top-sj span{
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    position: relative;
+}
+.public-top-sj span:after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 40%;
+}
+.public-top-sj span:before{
+    z-index: 999;
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.adv-3-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.adv-3-2 a{
+    margin-top: 10px;
+    width: 32%;
+}
+.adv-3-2 a img{
+    width: 100%;
+    height: 60px;
+}
+.adv-3-2 a:nth-child(-n+3){
+    margin-top: 0;
+}
+.mtop{
+    margin-top: 10px!important;
+}
+.public-img-siz{
+    display: flex!important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.public-img-siz a{
+    margin-top: 10px;
+    width: 30%;
+}
+.public-img-siz a img{
+    height: 90px;
+}
+.public-img-siz a span{
+    display: block;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.public-ul-min a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 1em;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-ul-min a:after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    left: 0;
+    top: 40%;
+    font-size: 16px;
+}
+.public-ul-min a p{
+    font-size: 16px;
+}
+.public-top-tbor-ta{
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+    box-sizing: border-box;
+}
+.public-top-taf-ta{
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.public-top-taf-ta span{
+    display: block;
+    position: relative;
+}
+.public-top-taf-ta span:after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    background-color: #2e63af;
+    position: absolute;
+    left: 0;
+}
+.public-ul a {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+}
+.public-ul a p {
+    text-indent: 1em;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-ul a span {
+    text-align: right;
+    display: block;
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*底部*/
+.footer {
+    display: flex;
+    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.footer a {
+    text-align: center;
+    display: block;
+    width: calc(100vw/4);
+    color: #555555;
+    font-size: 14px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+.link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.link a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+}

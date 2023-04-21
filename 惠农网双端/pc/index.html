@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>平台</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/generalStyle.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/pf-index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/pf_js.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div class="h-bg">
+        <div class="dm">
+            <div class="dn h-top-adv">
+                <a href=""><img src="img/img1.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="dm mbtb">
+            <div class="common-top">
+                <div class="logo">
+                    <span>惠农网</span>
+                    <div class="">
+                        <img src="img/dh.png" alt="">
+                        <p>13054300081</p>
+                    </div>
+                </div>
+                <div class="ss">
+                <form action="" class="top_input">
+                    <div>
+                        <span id="input_option" value="1">供应</span>
+                    </div>
+                    <div class="option-ul" id="ssk_option">
+                        <span value="1">供应</span>
+                        <span value="2">求购</span>
+                        <span value="3">资讯</span>
+                        <span value="4">展会</span>
+                        <span value="5">企业</span>
+                    </div>
+                    <input type="text" placeholder="请输入关键词">
+                    <button type="submit"><img src="img/fdj.png" alt=""></button>
+                </form>
+                <div class="hit-ss">
+                    <a href="">果蔬</a>
+                    <a href="">肉蛋</a>
+                    <a href="">农产品绿色通道</a>
+                </div>
+                </div>
+                <!-- 天气 -->
+                <div class="swiper-container pf-tq-div swiper-no-swiping">
+                    <div class="swiper-wrapper">
+                        <div class="tq pf-hide swiper-slide">
+                            <div class="dz">
+                                <div class="pf-dq">
+                                    <img src="img/dw.png" alt="">
+                                    <input id="pf-dqdz" value="">
+                                    <span id="pf-dqdz1" ></span>
+                                    <p class="pf-dzqh">切换</p>
+                                </div>
+                                <div class="pf-gxtime" id="pf-gxtime"></div>
+                            </div>
+                            <div class="pf-tq-nr">
+                                <div class="pf-dqwd">
+                                    <span class="show" id="pf-dq-wd"></span>
+                                    <span id="pf-dq-fl"></span>
+                                    <span id="pf-dq-sd"></span>
+                                    <span id="pf-dq-rq"></span>
+                                </div>
+                                <div class="pf-tq-xx">
+                                    <span id="pf-tq-and-fl"></span>
+                                    <span id="pf-dw-gw"></span>
+                                </div>
+                            </div>
+                            <div class="pf-tq-hk">
+                                <span class="pf-tq-show">气温</span>
+                                <span>风力</span>
+                                <span>湿度</span>
+                                <span>日期</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide pf_dz"></div>
+                    </div>
+                </div>
+                <div class="pf-tq-hidden" hidden="hidden"></div>
+                <!-- 天气单独使用js -->
+                <script type="text/javascript" src="js/pf-tq.js"></script>
+                <!-- end -->
+                <!-- 天气end -->
+            </div>
+        </div>
+    </div>
+        <div class="dm por h-bgcolor">
+        <div class="dm hcolor">
+            <div class="common-nav ">
+                <!-- <span>行业分类</span> -->
+                <div>
+                    <a href="" class="hk-a">平台首页</a>
+                    <a href="">农业农村</a>
+                    <a href="">现代农业</a>
+                    <a href="">农产品供应</a>
+                    <a href="">农业求购</a>
+                    <a href="">农资企业</a>
+                    <a href="">招商加盟</a>
+                    <a href="">行业展会</a>
+                    <a href="">农工招聘</a>
+                    <a href="">农村法律援助</a>
+                    <a href="">农产品进出口</a>
+                    <a href="">农技技训</a>
+                    <a href="">农业高产新模式</a>
+                </div>
+            </div>
+        </div>
+        <!-- 两侧广告位 -->
+        <input type="text" value="45px" hidden id="pf-cl-top">
+        <a href="" id="cl1-l" class="adv" value=""><img src="img/c1.jpg" alt=""></a>
+        <a href="" id="cl1-r" class="adv" value=""><img src="img/c2.jpg" alt=""></a>
+        </div>
+    <script type="text/javascript" src="js/lc_adv.js"></script>
+    <script>
+        // 判断宽度是否溢出屏幕
+        var hz=$('#cl-l').width()//一个盒子的宽度
+        var pm=$(window).width()//屏幕宽度
+        var zt=1200;//主题内容宽度
+        var bj=20;
+        if (pm < hz*2+zt+bj) {
+            var mb=(pm-zt-bj)/2 - 20
+            // $('#cl-l').width(mb)
+            $('#cl1-l').height('auto')
+            $('#cl1-l').css('left',"10px")
+            $('#cl1-l').css('top',"0")
+            // $('#cl-r').width(mb)
+            $('#cl1-r').height('auto')
+            $('#cl1-r').css('right','10px')
+            $('#cl1-l').css('top',"0")
+        }
+        // if($('#cl1-l').width()<100){
+        //     $('#cl1-l').hide()
+        //     $('#cl1-r').hide()
+        // }
+        $(function(){
+            a=$('#pf-cl-top').val()
+            setCheckInview($('.common-nav'),a)
+        })
+    </script>
+    <!-- end -->
+    <!-- 首页样式 -->
+    <!-- <script>
+        $(function(){
+            a=$('#pf-cl-top').val()
+            setCheckInview($('.first-banner'),a)
+        })
+    </script> -->
+    <div class="dm por top-1 mtop" style="height: 540px;">
+        <div class="dn por ns-buj top-nav">
+            <div class="nav-index">
+                <!-- <span class="top1">行业分类</span> -->
+                <div class="nav-yc">
+                    <div class="nav-show1">
+                        <a href="">水果</a>
+                        <a href="">蔬菜</a>
+                        <a href="">禽畜肉蛋</a>
+                        <a href="">水产</a>
+                        <a href="">农副加工</a>
+                        <a href="">米面粮油</a>
+                        <a href="">种子种苗</a>
+                        <a href="">苗木花草</a>
+                        <a href="">农资农机</a>
+                        <a href="">中药材</a>
+                        <a href="">日用百货</a>
+                        <a href="">经济作物</a>
+                        <a href="">农业检测</a>
+                        <a href="">农业服务</a>
+                    </div>
+                </div>
+            </div>
+            <div class="eject zindex nav-eje">
+                <!-- {volist name=":cate(5,1)" id="vo" key="k"} -->
+               <!-- <div class="demo">
+                   {volist name=":cate(5,2)" id="va"}
+                   {if $va.f_id==$vo.id}
+                   <div class="item">
+                       <span><a href=" 'sell/index',array('id'=>$va.id,'lb'=>2,'dq'=>$dq,'lx'=>$lx))}">{$va.category_title}</a></span>
+                       <div>
+                           {volist name=":cate(5,3)" id="v2"}
+                           {if $va.id==$v2.up_id}
+                           <a href="{:url('sell/index',array('id'=>$v2.id,'lb'=>3,'dq'=>$dq,'lx'=>$lx))}">{$v2.category_title}</a>
+                           {/if}
+                           {/volist}
+                       </div>
+                   </div>
+                   {/if}
+                   {/volist}
+               </div> -->
+               <!-- {/volist} -->
+            </div>
+            <!-- <div class="login-div">
+                <div class="login-div2">
+                    <div class="login-img">
+                        <img src="img/rt.png" alt="">
+                        <p></p>
+                    </div>
+                    <p></p>
+                    <div class="login-hk">
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <span class="top1"></span>
+                    <div class="gg-ul">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="nav-top-banner">
+            <div class="swiper-container first-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="img/banner.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="img/banner.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="img/banner.png">
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="first-banner-r"></div> -->
+                <!-- <div class="first-banner-l"></div> -->
+            </div>
+            <div class="top-login">
+                <div class="top-img">
+                    <div>
+                        <img src="img/rt.png" alt="">
+                        <span>你好，欢迎来到
+                            <p>惠农网</p>
+                        </span>
+                    </div>
+                    <div class="login-hk">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                    </div>
+                </div>
+                <div class="ss-bj">
+                    <div class="ssbj-top">实时报价</div>
+                    <div class="ssbj-ul public-ul">
+                        <a href="">
+                            <p>粮食今日报价</p>
+                            <span>></span>
+                        </a>
+                        <a href="">
+                            <p>粮食今日报价</p>
+                            <span>></span>
+                        </a>
+                        <a href="">
+                            <p>粮食今日报价</p>
+                            <span>></span>
+                        </a>
+                        <a href="">
+                            <p>粮食今日报价</p>
+                            <span>></span>
+                        </a>
+                        <a href="">
+                            <p>粮食今日报价</p>
+                            <span>></span>
+                        </a>
+                        <a href="">
+                            <p>粮食今日报价</p>
+                            <span>></span>
+                        </a>
+                        <a href="">
+                            <p>粮食今日报价</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-hit ns-buj">
+                <div class="w32 hit-div">
+                    <div class="public-top top1">
+                        <span>热门供应</span>
+                        <a href="">>></a>
+                    </div>
+                    <div class="hit-ul">
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                    </div>
+                </div>
+                <div class="w32 hit-div">
+                    <div class="public-top top1">
+                        <span>热门资讯</span>
+                        <a href="">>></a>
+                    </div>
+                    <div class="hit-ul">
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                    </div>
+                </div>
+                <div class="w32 hit-div">
+                    <div class="public-top top1">
+                        <span>热门资讯</span>
+                        <a href="">>></a>
+                    </div>
+                    <div class="hit-ul">
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                        <a href="">会说话的汉语拼音宝宝启蒙衔接拼音学习有声书学前班</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dm mbot">
+        <div class="dn mtop adv-5-4 top-adv">
+            <a href=""><img src="img/img2.jpg" alt=""></a>
+            <a href=""><img src="img/img3.jpg" alt=""></a>
+            <a href=""><img src="img/img4.jpg" alt=""></a>
+            <a href=""><img src="img/img5.jpg" alt=""></a>
+            <a href=""><img src="img/img6.jpg" alt=""></a>
+            <a href=""><img src="img/img7.jpg" alt=""></a>
+            <a href=""><img src="img/img8.jpg" alt=""></a>
+            <a href=""><img src="img/img9.jpg" alt=""></a>
+            <a href=""><img src="img/img10.jpg" alt=""></a>
+            <a href=""><img src="img/img11.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="dm bgf7 ptop pbt">
+        <div class="dn mtop">
+            <div class="top public-top art">
+                <p>新闻资讯</p>
+                <div class="top-a">
+                    <span>热门搜索：</span>
+                    <a href="">农业政策</a>
+                    <a href="">农业咨询</a>
+                    <a href="">农村养老</a>
+                </div>
+            </div>
+        </div>
+        <div class="dn mtop ns-buj">
+            <div class="w32">
+                <div class="swiper-container art-banner">
+                    <div class="swiper-wrapper">
+                        <a href="" class="swiper-slide">
+                            <img src="img/img12.jpg">
+                            <span>抢抓农时忙春耕 农业托管来助力</span>
+                        </a>
+                        <a href="" class="swiper-slide">
+                            <img src="img/img12.jpg">
+                            <span>抢抓农时忙春耕 农业托管来助力</span>
+                        </a>
+                        <a href="" class="swiper-slide">
+                            <img src="img/img12.jpg">
+                            <span>抢抓农时忙春耕 农业托管来助力</span>
+                        </a>
+                    </div>
+                    <div class="art-banner-span"></div>
+                </div>
+                <div class="art-ul">
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                </div>
+            </div>
+            <div class="w32">
+                <div class="hit-art-ul">
+                    <a href="">
+                        <div>
+                            <span>[热门]</span>
+                            <p>「奋进的春天」衡水武强:气象、农业专家</p>
+                        </div>
+                        <i>随着天气逐渐转暖，衡水市武强县冬小麦陆续进入返青期。3月1日，武强县气象局与武强县农业农村局组成专家团队到田间地头开展冬小麦农情调查。</i>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>[热门]</span>
+                            <p>「奋进的春天」衡水武强:气象、农业专家</p>
+                        </div>
+                        <i>随着天气逐渐转暖，衡水市武强县冬小麦陆续进入返青期。3月1日，武强县气象局与武强县农业农村局组成专家团队到田间地头开展冬小麦农情调查。</i>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>[热门]</span>
+                            <p>「奋进的春天」衡水武强:气象、农业专家</p>
+                        </div>
+                        <i>随着天气逐渐转暖，衡水市武强县冬小麦陆续进入返青期。3月1日，武强县气象局与武强县农业农村局组成专家团队到田间地头开展冬小麦农情调查。</i>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>[热门]</span>
+                            <p>「奋进的春天」衡水武强:气象、农业专家</p>
+                        </div>
+                        <i>随着天气逐渐转暖，衡水市武强县冬小麦陆续进入返青期。3月1日，武强县气象局与武强县农业农村局组成专家团队到田间地头开展冬小麦农情调查。</i>
+                    </a>
+                </div>
+                <div class="art-img adv-2-4">
+                    <a href="">
+                        <div><img src="img/img13.jpg" alt=""></div>
+                        <span>博山：全力实现特色农业</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img13.jpg" alt=""></div>
+                        <span>博山：全力实现特色农业</span>
+                    </a>
+                </div>
+            </div>
+            <div class="w32">
+                <div class="art-ul2">
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                </div>
+                <div class="art-ul3">
+                    <a href="">
+                        <p>中国持续推动农业技术国际合作</p>
+                        <span>在农业领域加强南南合作，是应对全球饥饿、营养不良、贫困和不平等挑战的重要途径。近年来，中国积极与发展中国家开展农业领域南南合作，扎实推进项目实施，</span>
+                    </a>
+                    <a href="">
+                        <p>中国持续推动农业技术国际合作</p>
+                        <span>在农业领域加强南南合作，是应对全球饥饿、营养不良、贫困和不平等挑战的重要途径。近年来，中国积极与发展中国家开展农业领域南南合作，扎实推进项目实施，</span>
+                    </a>
+                    <a href="">
+                        <p>中国持续推动农业技术国际合作</p>
+                        <span>在农业领域加强南南合作，是应对全球饥饿、营养不良、贫困和不平等挑战的重要途径。近年来，中国积极与发展中国家开展农业领域南南合作，扎实推进项目实施，</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dn mtop art-adv">
+            <a href=""><img src="img/img14.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="dm bgf ptop pbt">
+        <div class="dn mtop">
+            <div class="top public-top sell">
+                <p>农产品供应</p>
+                <div class="top-a">
+                    <span>热门搜索：</span>
+                    <a href="">水果</a>
+                    <a href="">蔬菜</a>
+                    <a href="">禽畜肉蛋</a>
+                    <a href="">农副加工</a>
+                </div>
+            </div>
+        </div>
+        <div class="dn mtop ns-buj">
+            <div class="w68">
+                <div class="public-top sell-top">
+                    <p>推荐产品</p>
+                    <a href="">更多+</a>
+                </div>
+                <div class="sell-img adv-2-4">
+                    <a href="">
+                        <div><img src="img/img16.jpg" alt=""></div>
+                        <div>
+                            <p>正宗秋月梨 当季新鲜水果 精美礼盒包装 汁多甘甜 肉质细脆</p>
+                            <span>￥20元</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img16.jpg" alt=""></div>
+                        <div>
+                            <p>正宗秋月梨 当季新鲜水果 精美礼盒包装 汁多甘甜 肉质细脆</p>
+                            <span>￥20元</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img16.jpg" alt=""></div>
+                        <div>
+                            <p>正宗秋月梨 当季新鲜水果 精美礼盒包装 汁多甘甜 肉质细脆</p>
+                            <span>￥20元</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img16.jpg" alt=""></div>
+                        <div>
+                            <p>正宗秋月梨 当季新鲜水果 精美礼盒包装 汁多甘甜 肉质细脆</p>
+                            <span>￥20元</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img16.jpg" alt=""></div>
+                        <div>
+                            <p>正宗秋月梨 当季新鲜水果 精美礼盒包装 汁多甘甜 肉质细脆</p>
+                            <span>￥20元</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img16.jpg" alt=""></div>
+                        <div>
+                            <p>正宗秋月梨 当季新鲜水果 精美礼盒包装 汁多甘甜 肉质细脆</p>
+                            <span>￥20元</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="sell-ul public-ul-2">
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>水果 |</span>
+                            <p>柑橘品种沃柑精品A级果产地水果</p>
+                        </div>
+                        <span>￥26.8</span>
+                    </a>
+                </div>
+            </div>
+            <div class="w32">
+                <span class="sell-top2">绿色通道</span>
+                <div class="sell-td public-ul-2">
+                    <a href="">绿色有机产品</a>
+                    <a href="">自产农家乐</a>
+                    <a href="">手工艺品</a>
+                    <a href="">生鲜野生产品</a>
+                </div>
+                <div class="public-top sell-top">
+                    <p>热门发布</p>
+                    <a href="">更多+</a>
+                </div>
+                <div class="sell-ul2 public-ul">
+                    <a href="">
+                        <p>田园管理机多功能开沟培土机柴油35</p>
+                        <span>￥面议</span>
+                    </a>
+                    <a href="">
+                        <p>田园管理机多功能开沟培土机柴油35</p>
+                        <span>￥面议</span>
+                    </a>
+                    <a href="">
+                        <p>田园管理机多功能开沟培土机柴油35</p>
+                        <span>￥面议</span>
+                    </a>
+                    <a href="">
+                        <p>田园管理机多功能开沟培土机柴油35</p>
+                        <span>￥面议</span>
+                    </a>
+                    <a href="">
+                        <p>田园管理机多功能开沟培土机柴油35</p>
+                        <span>￥面议</span>
+                    </a>
+                    <a href="">
+                        <p>田园管理机多功能开沟培土机柴油35</p>
+                        <span>￥面议</span>
+                    </a>
+                    <a href="">
+                        <p>田园管理机多功能开沟培土机柴油35</p>
+                        <span>￥面议</span>
+                    </a>
+                    <a href="">
+                        <p>田园管理机多功能开沟培土机柴油35</p>
+                        <span>￥面议</span>
+                    </a>
+                    <a href="">
+                        <p>田园管理机多功能开沟培土机柴油35</p>
+                        <span>￥面议</span>
+                    </a>
+                </div>
+                <div class="sell-img2 adv">
+                    <a href="">
+                        <div>
+                            <span>菊苣种子牧草种子四季牧草种多年生南方北方草籽</span>
+                            <p>￥20.5   查看详情 >></p>
+                        </div>
+                        <div>
+                            <img src="img/img16.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <span>菊苣种子牧草种子四季牧草种多年生南方北方草籽</span>
+                            <p>￥20.5   查看详情 >></p>
+                        </div>
+                        <div>
+                            <img src="img/img16.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dn mtop art-adv">
+            <a href=""><img src="img/img17.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="dm bgf ptop pbt">
+        <div class="dn mtop">
+            <div class="top public-top com">
+                <p>农资企业</p>
+                <div class="top-a">
+                    <span>热门搜索：</span>
+                    <a href="">农资供应公司</a>
+                    <a href="">农资销售商</a>
+                    <a href="">饲料供应商</a>
+                </div>
+            </div>
+        </div>
+        <div class="dn mtop com-img adv-7-4">
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+            <a href=""><div><img src="img/img18.jpg" alt=""></div></a>
+        </div>
+        <div class="dn mtop ns-buj">
+            <div class="w32">
+                <div class="public-top com-top">
+                    <p>推荐企业</p>
+                    <a href="">更多+</a>
+                </div>
+                <div class="hit-com adv">
+                    <a href="">
+                        <div><img src="img/img19.jpg" alt=""></div>
+                        <div>
+                            <p>湖北云谷农业发展股份有限公司</p>
+                            <span>湖北云谷农业发展股份有限公司位于湖北省荆州市（湖北省荆州市荆州区马山镇双龙村）主要从事有机水稻、虾田稻、等优质粮食种植、收储、加工、销售的粮食产业链公司采用“公司+合作社+基地+农户”的经营模式，下属有三个优质稻生产基地。即：“荆州市金谷王粮油种植专业合作社”，“荆州市黎家垱优质稻专业合作社”、“荆州市双杨云谷优质稻种植专业合作社”。基地生产采用有机肥料、生</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img19.jpg" alt=""></div>
+                        <div>
+                            <p>湖北云谷农业发展股份有限公司</p>
+                            <span>湖北云谷农业发展股份有限公司位于湖北省荆州市（湖北省荆州市荆州区马山镇双龙村）主要从事有机水稻、虾田稻、等优质粮食种植、收储、加工、销售的粮食产业链公司采用“公司+合作社+基地+农户”的经营模式，下属有三个优质稻生产基地。即：“荆州市金谷王粮油种植专业合作社”，“荆州市黎家垱优质稻专业合作社”、“荆州市双杨云谷优质稻种植专业合作社”。基地生产采用有机肥料、生</span>
+                        </div>
+                    </a>
+                </div>  
+            </div>
+            <div class="w32">
+                <div class="public-top com-top">
+                    <p>热门发布</p>
+                    <a href="">更多+</a>
+                </div>
+                <div class="art-ul2 com-ul">
+                    <a href="">四川玉禾农业发展有限公司</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                    <a href="">智慧农业:公司暂无空气能热泵业务</a>
+                </div>
+            </div>
+            <div class="w32">
+                <div class="public-top com-top">
+                    <p>金牌企业</p>
+                    <a href="">更多+</a>
+                </div>
+                <a href="" class="jp-com">
+                    <div><img src="img/img20.jpg" alt=""></div>
+                    <div>
+                        <p>湖北永耕农业有限公司</p>
+                        <span>成立于2017年3月，始终坚守“永耕不辍、必见光明”的信念，秉持“匠心种植”的理念，以打造安全、优质农产品供应链为己任，致力于成为国内一流的智能温室生产运营商和现代农业科技集成服务商。</span>
+                    </div>
+                </a>
+                <div class="art-ul com-ul2">
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                    <a href="">农业农村部部署开展全国肥料质量监督抽查</a>
+                </div>
+            </div>
+        </div>
+        <div class="dn mtop adv-2-4 com-adv">
+            <a href=""><img src="img/img21.jpg" alt=""></a>
+            <a href=""><img src="img/img22.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="dm bgf7 ptop pbt">
+        <div class="dn mtop">
+            <div class="top public-top buy">
+                <p>农业求购</p>
+                <div class="top-a">
+                    <span>热门搜索：</span>
+                    <a href="">米面粮油</a>
+                    <a href="">种子种苗</a>
+                    <a href="">苗木花草</a>
+                    <a href="">农资农机</a>
+                </div>
+            </div>
+        </div>
+        <div class="dn mtop adv-3-4 buy-img">
+            <a href="">
+                <div><img src="img/img23.jpg" alt=""></div>
+                <div>
+                    <p>东方红90 1404马力四驱带驾驶室 中型多功能农机 使用灵活</p>
+                    <span>[热门求购]   2023.03.04</span>
+                </div>
+            </a>
+            <a href="">
+                <div><img src="img/img23.jpg" alt=""></div>
+                <div>
+                    <p>东方红90 1404马力四驱带驾驶室 中型多功能农机 使用灵活</p>
+                    <span>[热门求购]   2023.03.04</span>
+                </div>
+            </a>
+            <a href="">
+                <div><img src="img/img23.jpg" alt=""></div>
+                <div>
+                    <p>东方红90 1404马力四驱带驾驶室 中型多功能农机 使用灵活</p>
+                    <span>[热门求购]   2023.03.04</span>
+                </div>
+            </a>
+            <a href="">
+                <div><img src="img/img23.jpg" alt=""></div>
+                <div>
+                    <p>东方红90 1404马力四驱带驾驶室 中型多功能农机 使用灵活</p>
+                    <span>[热门求购]   2023.03.04</span>
+                </div>
+            </a>
+            <a href="">
+                <div><img src="img/img23.jpg" alt=""></div>
+                <div>
+                    <p>东方红90 1404马力四驱带驾驶室 中型多功能农机 使用灵活</p>
+                    <span>[热门求购]   2023.03.04</span>
+                </div>
+            </a>
+            <a href="">
+                <div><img src="img/img23.jpg" alt=""></div>
+                <div>
+                    <p>东方红90 1404马力四驱带驾驶室 中型多功能农机 使用灵活</p>
+                    <span>[热门求购]   2023.03.04</span>
+                </div>
+            </a>
+        </div>
+        <div class="dn mtop ns-buj buy-div1">
+            <div class="buy-div">
+                <div class="public-top buy-top">
+                    <p>求购产品</p>
+                    <span>地区</span>
+                    <span>时间</span>
+                </div>
+                <div class="buy-ul">
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                </div>
+            </div>
+            <div class="buy-div">
+                <div class="public-top buy-top">
+                    <p>求购产品</p>
+                    <span>地区</span>
+                    <span>时间</span>
+                </div>
+                <div class="buy-ul">
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                </div>
+            </div>
+            <div class="buy-div">
+                <div class="public-top buy-top">
+                    <p>求购产品</p>
+                    <span>地区</span>
+                    <span>时间</span>
+                </div>
+                <div class="buy-ul">
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                    <a href="">
+                        <p><i>农资农机|</i><u>有机肥发酵花卉底肥绿植</u></p>
+                        <span>东北</span>
+                        <span>03/04</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dn mtop art-adv">
+            <a href=""><img src="img/img24.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="dm bgf ptop pbt">
+        <div class="dn mtop">
+            <div class="top public-top exh">
+                <p>行业展会</p>
+                <a href="">更多+</a>
+            </div>
+        </div>
+        <div class="dn mtop ns-buj">
+            <div class="w50 exh-ul">
+                <a href="">
+                    <p>中国（新疆）国际农业博览会</p>
+                    <span>2023年中国（新疆）国际农业博览会（CXIAF），展会时间：2023年08月08日~08月09日，展会地点：中国-新疆-乌鲁木齐市友好北路167号-新疆国际会展中心，主办方：中华人民共和国商务部，举办周期：一年一届，展会面积：60000平米，参展观众：65000人，参展商数量及参展品牌达到1500家。</span>
+                </a>
+                <a href="">
+                    <p>中国（新疆）国际农业博览会</p>
+                    <span>2023年中国（新疆）国际农业博览会（CXIAF），展会时间：2023年08月08日~08月09日，展会地点：中国-新疆-乌鲁木齐市友好北路167号-新疆国际会展中心，主办方：中华人民共和国商务部，举办周期：一年一届，展会面积：60000平米，参展观众：65000人，参展商数量及参展品牌达到1500家。</span>
+                </a>
+                <a href="">
+                    <p>中国（新疆）国际农业博览会</p>
+                    <span>2023年中国（新疆）国际农业博览会（CXIAF），展会时间：2023年08月08日~08月09日，展会地点：中国-新疆-乌鲁木齐市友好北路167号-新疆国际会展中心，主办方：中华人民共和国商务部，举办周期：一年一届，展会面积：60000平米，参展观众：65000人，参展商数量及参展品牌达到1500家。</span>
+                </a>
+                <a href="">
+                    <p>中国（新疆）国际农业博览会</p>
+                    <span>2023年中国（新疆）国际农业博览会（CXIAF），展会时间：2023年08月08日~08月09日，展会地点：中国-新疆-乌鲁木齐市友好北路167号-新疆国际会展中心，主办方：中华人民共和国商务部，举办周期：一年一届，展会面积：60000平米，参展观众：65000人，参展商数量及参展品牌达到1500家。</span>
+                </a>
+            </div>
+            <div class="w50">
+                <a href="" class="exh-img adv">
+                    <div><img src="img/img25.jpg" alt=""></div>
+                    <div>
+                        <p>中国国际农产品交易会</p>
+                        <span>展会时间：2023年08月03日</span>
+                        <span>展会地点：中国 - 云南 - 昆明市春城路289号 - 昆明国际会</span>
+                        <i>详情 >></i>
+                    </div>
+                </a>
+                <div class="public-top com-top mtop">
+                    <p>集市推荐</p>
+                    <a href="">更多+</a>
+                </div>
+                <div class="public-ul hit-exh">
+                    <a href="">
+                        <p>哈尔滨市阿城区双丰镇椴树村大集：每逢周一为集</p>
+                        <span>>></span>
+                    </a>
+                    <a href="">
+                        <p>哈尔滨市阿城区双丰镇椴树村大集：每逢周一为集</p>
+                        <span>>></span>
+                    </a>
+                    <a href="">
+                        <p>哈尔滨市阿城区双丰镇椴树村大集：每逢周一为集</p>
+                        <span>>></span>
+                    </a>
+                    <a href="">
+                        <p>哈尔滨市阿城区双丰镇椴树村大集：每逢周一为集</p>
+                        <span>>></span>
+                    </a>
+                    <a href="">
+                        <p>哈尔滨市阿城区双丰镇椴树村大集：每逢周一为集</p>
+                        <span>>></span>
+                    </a>
+                    <a href="">
+                        <p>哈尔滨市阿城区双丰镇椴树村大集：每逢周一为集</p>
+                        <span>>></span>
+                    </a>
+                    <a href="">
+                        <p>哈尔滨市阿城区双丰镇椴树村大集：每逢周一为集</p>
+                        <span>>></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dn mtop art-adv">
+            <a href=""><img src="img/img26.jpg" alt=""></a>
+        </div>
+        <div class="dn mtop ns-buj">
+            <div class="w50">
+                <div class="top public-top flyz">
+                    <p>农村法律援助</p>
+                    <a href="">更多+</a>
+                </div>
+                <div class="flyz-img adv-3-4">
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                </div>
+            </div>
+            <div class="w50">
+                <div class="top public-top ncpjk">
+                    <p>农产品进出口</p>
+                    <a href="">更多+</a>
+                </div>
+                <div class="ncpjk-ul">
+                    <a href="">
+                        <div>
+                            <i>[推荐]</i>
+                            <p>打好农产品对外贸易这张牌</p>
+                        </div>
+                        <span>我国农产品贸易持续发力，进出口均保持增长，在全球通货膨胀、俄乌冲突等不利国际环境下显现出良好韧性。根据中国海关数据，2022年农产品进出口额达3343.2亿美元，较上...</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i>[推荐]</i>
+                            <p>打好农产品对外贸易这张牌</p>
+                        </div>
+                        <span>我国农产品贸易持续发力，进出口均保持增长，在全球通货膨胀、俄乌冲突等不利国际环境下显现出良好韧性。根据中国海关数据，2022年农产品进出口额达3343.2亿美元，较上...</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i>[推荐]</i>
+                            <p>打好农产品对外贸易这张牌</p>
+                        </div>
+                        <span>我国农产品贸易持续发力，进出口均保持增长，在全球通货膨胀、俄乌冲突等不利国际环境下显现出良好韧性。根据中国海关数据，2022年农产品进出口额达3343.2亿美元，较上...</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i>[推荐]</i>
+                            <p>打好农产品对外贸易这张牌</p>
+                        </div>
+                        <span>我国农产品贸易持续发力，进出口均保持增长，在全球通货膨胀、俄乌冲突等不利国际环境下显现出良好韧性。根据中国海关数据，2022年农产品进出口额达3343.2亿美元，较上...</span>
+                    </a>
+                </div>
+            </div>
+            <div class="w50">
+                <div class="top public-top njjx">
+                    <p>农技技训</p>
+                    <a href="">更多+</a>
+                </div>
+                <div class="ncpjk-ul">
+                    <a href="">
+                        <div>
+                            <i>[推荐]</i>
+                            <p>打好农产品对外贸易这张牌</p>
+                        </div>
+                        <span>我国农产品贸易持续发力，进出口均保持增长，在全球通货膨胀、俄乌冲突等不利国际环境下显现出良好韧性。根据中国海关数据，2022年农产品进出口额达3343.2亿美元，较上...</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i>[推荐]</i>
+                            <p>打好农产品对外贸易这张牌</p>
+                        </div>
+                        <span>我国农产品贸易持续发力，进出口均保持增长，在全球通货膨胀、俄乌冲突等不利国际环境下显现出良好韧性。根据中国海关数据，2022年农产品进出口额达3343.2亿美元，较上...</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i>[推荐]</i>
+                            <p>打好农产品对外贸易这张牌</p>
+                        </div>
+                        <span>我国农产品贸易持续发力，进出口均保持增长，在全球通货膨胀、俄乌冲突等不利国际环境下显现出良好韧性。根据中国海关数据，2022年农产品进出口额达3343.2亿美元，较上...</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i>[推荐]</i>
+                            <p>打好农产品对外贸易这张牌</p>
+                        </div>
+                        <span>我国农产品贸易持续发力，进出口均保持增长，在全球通货膨胀、俄乌冲突等不利国际环境下显现出良好韧性。根据中国海关数据，2022年农产品进出口额达3343.2亿美元，较上...</span>
+                    </a>
+                </div>
+            </div>
+            <div class="w50">
+                <div class="top public-top nygc">
+                    <p>农业高产新模式</p>
+                    <a href="">更多+</a>
+                </div>
+                <div class="flyz-img adv-3-4">
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                    <a href="">
+                        <div><img src="img/img27.jpg" alt=""></div>
+                        <span>刑事辩护和刑事代理</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dn mtop art-adv">
+            <a href=""><img src="img/img28.jpg" alt=""></a>
+        </div>
+        <div class="dn mtop">
+            <div class="top public-top link">
+                <p>友情链接</p>
+            </div>
+        </div>
+        <div class="dn mtop ns-link">
+            <a href="">农业网-农业行业综合信息化平台</a>
+            <a href="">中国农业信息网</a>
+            <a href="">中国农业信息网</a>
+            <a href="">四川农业网</a>
+            <a href="">中华人民共和国农业农村部</a>
+            <a href="">中国农网_中国农业新闻网</a>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- footer -->
+    <div class="dm f-bgcolor-img mtop">
+        <div class="dn">
+            <div class="dn ptop2 pbt2 f-bg">
+            <div class="footer-nav">
+                <a href="">供应信息</a>
+                <span>|</span>
+                <a href="">企业名录</a>
+                <span>|</span>
+                <a href="">行业展会</a>
+                <span>|</span>
+                <a href="">新闻资讯</a>
+                <span>|</span>
+                <a href="">求购信息</a>
+                <span>|</span>
+                <a href="">联系我们</a>
+                <span>|</span>
+                <a href="">人才招聘</a>
+                <span>|</span>
+                <a href="">关于我们</a>
+            </div>
+            <div class="bah">
+                <!-- 备案号预留 -->
+                <p>免责声明:本站所有信息均由网友自由发布，本站不承担由于内容的合法性及真实性所引起的一切争议和法律责任</p>
+                <p>版权所有：甘南县好多收玉米种植专业合作社</p>
+                <p>备案号：备案中</p>
+                <!-- end -->
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var ns_banner = new Swiper('.first-banner', {
+            effect:'coverflow',//3d流动
+            // effect:'cube',//3d方块
+            loop: true,
+	        centeredSlides : true,
+	        watchSlidesProgress : true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+                waitForTransition: false,
+            },
+	        // navigation: {
+	        // 	nextEl: '.first-banner-r',
+	        // 	prevEl: '.first-banner-l',
+	        // },
+            // effect:'fade'
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //     clickable: true,
+            // }, 
+        })
+        
+        var ns_banner = new Swiper('.art-banner', {
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+                waitForTransition: false,
+            },
+            pagination: {
+                el: '.art-banner-span',
+                clickable: true,
+            }, 
+            // effect:'fade'
+        });
+    })
+</script>
+<!-- 下拉菜单 -->
+<script>
+    var c;
+    // 下拉列表的打开隐藏
+    $('#input_option').click(function () {
+        if ($('#ssk_option').is(':hidden')) {
+            $('#ssk_option').css('display', 'flex')
+            $('#input_option').addClass('hk-a')
+        } else {
+            $('#ssk_option').hide()
+            $('#input_option').removeClass('hk-a')
+        }
+    })
+    // 列表显示后的下方选择
+    $('#ssk_option span').click(function () {
+        var a = $("#ssk_option span:eq(" + $(this).index() + ")").text();
+        c = $("#ssk_option span:eq(" + $(this).index() + ")").attr('value')
+        $('#input_option').text(a)
+        $('#input_option').removeClass('hk-a')
+        $('#ssk_option').hide()
+        pd(c)
+    })
+    // 地址处理
+    function pd(c) {
+        var dz1 = '/mobile/'
+        var dz2;
+        var dz3 = '/index.html'
+        var url;
+        if (c == 1) {
+            dz2 = 'sell'
+        }
+        if (c == 2) {
+            dz2 = 'buy'
+        }
+        if (c == 3) {
+            dz2 = 'article'
+        }
+        if (c == 4) {
+            dz2 = 'exhibit'
+        }
+        if (c == 5) {
+            dz2 = 'company'
+        }
+        url = dz1 + dz2 + dz3
+        $('form').attr('action', url)
+    }
+// end
+</script>
+</html>

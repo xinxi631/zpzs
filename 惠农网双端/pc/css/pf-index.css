@@ -1,0 +1,586 @@
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.qfd:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+input[type=text] {
+    border: none;
+    outline: none;
+}
+
+input[type=password] {
+    border: none;
+    outline: none;
+}
+
+input[type=button] {
+    border: none;
+    outline: none;
+}
+input[type=submit] {
+    border: none;
+    outline: none;
+}
+select{
+    border: none;
+    outline: none;
+}
+option{
+    border: none;
+    outline: none;
+}
+.dm {
+    width: 100%;
+}
+
+.dn {
+    width: 1200px;
+    margin: 0 auto;
+}
+.eject {
+    top: 0;
+    height: 325px;
+    position: absolute;
+    margin-left: 240px;
+    float: right;
+}
+
+.zindex {
+    z-index: 9999;
+}
+
+.show {
+    z-index: 99999 !important;
+    display: block !important;
+}
+
+.demo {
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    overflow-y: auto;
+    display: none;
+    border-top: none;
+    border-left: none;
+    opacity: .93;
+    background-color: #ffffff;
+    z-index: 999;
+}
+
+.demo .item {
+    width: 467px;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 0px 10px;
+    border-bottom: 1px dashed #d5d5d5;
+    float: left;
+}
+
+.demo .item span {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+
+.demo .item div {
+    padding-bottom: 5px;
+}
+
+.demo .item div a {
+    padding: 0px 14px;
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    border-right: 1px solid #d5d5d5;
+    color: #000;
+}
+
+.demo .navadv {
+    width: 150px;
+    overflow: hidden;
+    float: left;
+    margin-left: 50px;
+}
+
+.demo .navadv li {
+    width: 150px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    height: 120px;
+    float: left;
+}
+
+.demo .navadv li a {
+    display: block;
+}
+
+.demo .navadv li img {
+    display: block;
+    width: 100%;
+    height: 120px;
+    transition: all .2s linear;
+    transform: translate3d(0, 0px, 0);
+}
+
+.demo .navadv li:hover a img {
+    transform: translate3d(0, -4px, 0);
+}
+a,
+div,
+span,
+li,
+p,
+b,
+i,
+u {
+    display: block;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+}
+.por{
+    position: relative;
+}
+.poa{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+}
+.adv-2-4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.adv-2-4 a{
+    display: block;
+    width: calc((100% - 10px)/2);
+    margin-top: 10px;
+}
+.adv-3-4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.adv-3-4 a{
+    margin-top: 10px;
+    display: block;
+    width: calc((100% - 20px)/3);
+}
+.adv-4-4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.adv-4-4 a{
+    margin-top: 10px;
+    display: block;
+    width: calc((100% - 30px)/4);
+}
+.adv-5-4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.adv-5-4 a{
+    display: block;
+    width: calc((100% - 40px)/5);
+    margin-top: 10px;
+}
+.adv-5-4 a img{
+    width: 100%;
+    height: 100%;
+}
+.adv-6-4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.adv-6-4 a{
+    display: block;
+    width: calc((100% - 50px)/6);
+    margin-top: 10px;
+}
+.adv-7-4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.adv-7-4 a{
+    display: block;
+    width: calc((100% - 60px)/7);
+    margin-top: 10px;
+}
+.public-ul a{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+}
+.public-ul a p{
+    text-indent: 1em;
+    max-width: 78%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-ul a span{
+    display: block;
+    width: 22%;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.banner-w{
+    width: 100%;
+}
+.banner-w a{
+    display: block;
+    width: 100%;
+}
+.public-ul-min a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 1em;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-ul-min a:after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    left: 0;
+    top: 40%;
+}
+.mbot{
+    margin-bottom: 10px!important;
+}
+.nsgg{
+    width: 90%;
+    margin: 0 auto;
+}
+.nsgg a:after{
+    background-color: #555555;
+}
+.public-top-boobor{
+    padding-bottom: 4px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+}
+.public-top-boobor:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: 0;
+    height: 2px;
+    background-color: #dedede;
+    left: 0;
+}
+.public-top-boobor span{
+    height: 30px;
+    padding-bottom: 4px;
+    position: relative;
+    display: block;
+    font-size: 16px;
+}
+.public-top-boobor span:after{
+    z-index: 999;
+    position: absolute;
+    content: '';
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    /*border-bottom: 8px solid #033333;*/
+    bottom: 0;
+    left: 40%;
+}
+.public-top-boobor span:before{
+    z-index: 999;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    /*background-color: #033333;*/
+}
+.public-top-boobor a{
+    font-size: 16px;
+}
+.ds{
+    display: block;
+    position: relative;
+}
+.ds:after{
+    content: '';
+    left: 0;
+    height: 100%;
+    position: absolute;
+}
+.mtop{
+    margin-top: 10px!important;
+}
+.border{
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+.public-top{
+    display: flex;
+    justify-content: space-between;
+}
+.public-top-tbor-na{
+    width: 100%;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+.public-top-tbor-ta{
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+    box-sizing: border-box;
+}
+.public-top-taf-ta{
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.public-top-taf-ta span{
+    display: block;
+    position: relative;
+}
+.public-top-taf-ta span:after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    background-color: #2e63af;
+    position: absolute;
+    left: 0;
+}
+.w100{
+    width: 100%;
+}
+.w40{
+    width: 39%;
+}
+.w60{
+    width: 59%;
+}
+.w64{
+    width: 64%;
+}
+.w68{
+    width: 67%;
+}
+.w70{
+    width: 69%;
+}
+.w75{
+    width: 74%;
+}
+.w30{
+    width: 29%;
+}
+.w32{
+    width: 32%;
+}
+.w80{
+    width: 79%;
+}
+.w20{
+    width: 19%;
+}
+.w25{
+    width: 25%;
+}
+.w45{
+    width: 44%;
+}
+.w50{
+    width: 49%;
+}
+.w55{
+    width: 54%;
+}
+.ns-link{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 30px;
+    overflow: hidden;
+}
+.ns-link a{
+    margin: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+.ns-buj{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ptop{
+    padding-top: 10px;
+}
+.pad-2{
+    padding: 5px 0;
+}
+.w32{
+    width: 32%;
+}
+.w33{
+    width: 33%;
+}
+.public-ul-img{
+    width: 100%;
+}
+.public-ul-img a{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.public-ul-img a img{
+    width: 30%;
+}
+.public-ul-img a div{
+    width: 69%;
+}
+.public-ul-img-2-4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.public-ul-img-2-4 a{
+    width: 24%;
+    display: block;
+}
+.public-ul-2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.public-ul-2 a{
+    width: 49%;
+    display: block;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+.public-ul-2 a p{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-ul-2 a:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.public-ul-3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.public-ul-3 a{
+    width: 33%;
+    display: block;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+.public-ul-3 a p{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.public-ul-3 a:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.public-ul-2-time{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.public-ul-2-time a{
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+.public-ul-2-time a p{
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+.public-ul-2-time a span{
+    display: block;
+    width: 20%;
+    text-align: right;
+}
+.public-ul-2-time a:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.public-ul-img-span a{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.public-ul-img-span img{
+    width: 40%;
+    height: 90px;
+}
+.public-ul-img-span a span{
+    width: 58%;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+}
+[class*="adv"]{
+    overflow: hidden;
+}
+[class*="adv"] a{
+    overflow: hidden!important;
+}
+[class*="adv"] img:hover {
+    width: 100%;
+    transform:scale(1.15,1.15);
+}
+/* 中心变形*/
+[class*="adv"] img {
+    transition:all 0.5s ease-out;
+    /* 过度 所有css属性 1秒过度 结束慢*/
+    -moz-transition:all 0.5s ease-out;
+    /* Firefox 4 */
+    -webkit-transition:all 0.5s ease-out;
+    /* Safari 和 Chrome */
+    -o-transition:all 0.5s ease-out;
+    /* Opera */
+}
